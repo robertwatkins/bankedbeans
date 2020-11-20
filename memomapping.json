@@ -1,0 +1,32 @@
+[
+  {
+    "setmemo" : "Rent",
+    "where": {
+      "accounttype": "Business",
+      "debitamount": {
+        "amount": 2010.00,
+        "is": "="
+      }
+    }
+  },
+  {
+    "setmemo" : "Bank Loan",
+    "where": {
+      "accounttype": "Business",
+      "debitamount":         {
+          "amount": 810.33,
+          "is": "="
+        }
+    }
+  },
+  {
+    "setmemo" : "Car Payment",
+    "where": {
+      "accounttype": "Personal",
+      "debitamount": {
+        "amount": 799.99,
+        "is": "="
+      }
+    }
+  }
+]

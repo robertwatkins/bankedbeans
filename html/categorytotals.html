@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Watkins Accounting</title>
+    <script type="text/javascript" src="nav.js"></script>
+    <script type="text/javascript" src="categorytotals.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="writenav();">
+<div id="nav"></div>
+<div class="title">Category Totals</div>
+    <form name="memoform" id="memoform" action="javascript:setmemo()">
+        <div id="memo"></div>
+    <input type="submit" name="submit" value="Submit">
+    </form>
+<script language="JavaScript1.5">
+var table_location = document.getElementById("memo");
+console.log(table_location.innerText);
+
+const userAction = async () => {
+  const response = await fetch('/categorytotals/');
+  const transactiondata = await response.json();
+  table_location.appendChild(buildHtmlTable(transactiondata));
+}
+
+userAction();
+
+    </script>
+
+</body>
+</html>

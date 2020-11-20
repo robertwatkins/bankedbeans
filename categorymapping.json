@@ -1,0 +1,770 @@
+[
+{
+    "category": "landscaping",
+    "subcategory": "",
+    "accounttype": "Business",
+    "matchon": {
+        "descriptionlikeany": [
+            "GARDEN"
+        ],
+        "memolikeany": [
+            "landscaping-maintenance"
+        ]
+    }
+
+},
+{
+    "category": "landscaping",
+    "subcategory": "",
+    "accounttype": "Personal",
+    "matchon": {
+        "descriptionlikeany": [
+            "GARDEN"
+        ]
+    }
+
+},
+{
+    "category": "business expense",
+    "subcategory": "misc",
+    "accounttype": "Business",
+    "matchon": {
+        "descriptionlikeany": [
+            "PARKING",
+            "WIX"
+        ],
+        "memolikeany": [
+            "misc"
+        ]
+    }
+
+},
+{
+    "category": "utilities",
+    "subcategory": "",
+    "accounttype": "Business",
+    "matchon": {
+        "descriptionlikeany": [
+            "COX"
+        ]
+    }
+
+},
+{
+    "category": "business expense",
+    "subcategory": "",
+    "accounttype": "Business",
+    "matchon": {
+        "descriptionlikeany": [
+            "SECRETARY OF STATE",
+            "GOOGLE"
+        ],
+        "memolikeany": [
+            "business expense"
+        ]
+    }
+
+},
+{
+    "category": "retirement",
+    "subcategory": "",
+    "accounttype": "Business",
+    "matchon": {
+        "descriptionlikeany": [
+            "INVEST"
+        ]
+    }
+},
+{
+    "category": "salary",
+    "subcategory": "",
+    "accounttype": "Business",
+    "matchon": {
+        "memolikeany": [
+            "Salary"
+        ]
+    }
+},
+
+{
+    "category": "employment taxes",
+    "subcategory": "",
+    "accounttype": "Business",
+    "matchon": {
+        "descriptionlikeany": [
+            "EMPL SEC COMM EMPL"
+        ]
+    }
+},
+{
+    "category": "loan",
+    "subcategory": "",
+    "accounttype": "Business",
+    "matchon": {
+        "descriptionlikeany": [
+            "CITICARD PAYMENT"
+        ],
+        "memolikeany": [
+            "Citicards",
+            "CITICARD PAYMENT"
+        ]
+    }
+
+},
+{
+    "category": "office expense",
+    "subcategory": "office maintenance",
+    "accounttype": "Business",
+    "matchon": {
+        "descriptionlikeany": [
+            "LOWE",
+            "HOME DEPOT",
+            "HOMEDEPOT",
+            "HARBOR FREIGHT"
+            "SHERWIN WILLIAMS"
+        ]
+    }
+
+},
+{
+    "category": "office expense",
+    "subcategory": "",
+    "accounttype": "Business",
+    "matchon": {
+        "descriptionlikeany": [
+            "BEDBATH&BEYOND",
+            "OFFICE DEPOT",
+            "TARGET",
+            "DYNAMIC MEDIA",
+            "PIER 1",
+            "POTTERYBARN.COM"
+        ],
+        "memolikeany": [
+             "office expense"
+        ]
+    }
+
+},
+{
+    "category": "office supplies",
+    "subcategory": "",
+    "accounttype": "Business",
+    "matchon": {
+        "descriptionlikeany": [
+            "BESTBUY",
+            "Etsy.com",
+            "HP"
+        ],
+        "memolikeany": [
+             "Office Supplies"
+        ]
+    }
+
+},
+{
+    "category": "professional expense",
+    "subcategory": "",
+    "accounttype": "Business",
+    "matchon": {
+        "descriptionlikeany": [
+            "AMZN",
+            "AMAZON.COM",
+            "APPLE.COM"
+        ]
+    }
+
+},
+{
+    "category": "professional services",
+    "subcategory": "",
+    "accounttype": "Business",
+    "matchon": {
+        "memolikeany": [
+            "professional services"
+        ]
+    }
+
+},
+{
+    "category": "gift",
+    "subcategory": "",
+    "accounttype": "Business",
+    "matchon": {
+        "descriptionlikeany": [
+            "HALLMARK COM"
+        ]
+    }
+},
+{
+    "category": "income",
+    "subcategory": "",
+    "accounttype": "Business",
+    "matchon": {
+        "descriptionlikeany": [
+            "ATM DEPOSIT",
+            "DEPOSIT BRANCH",
+            "STRIPE TRANSFER",
+            "VENMO"
+        ]
+    }
+},
+{
+    "category": "income",
+    "subcategory": "",
+    "accounttype": "Any",
+    "matchon": {
+        "descriptionlikeany": [
+            "SQUARE INC",
+            "DEPOSIT - MOBILE"
+        ],
+        "memolikeany": [
+            "income"
+        ]
+    }
+},
+{
+    "category": "other state and local taxes",
+    "subcategory": "",
+    "accounttype": "Personal",
+    "matchon": {
+        "memolikeany": [
+            "taxes"
+    ]
+    }
+},
+{
+    "category": "federal income taxes",
+    "subcategory": "",
+    "accounttype": "Any",
+    "matchon": {
+        "memolikeany": [
+            "US Treasury",
+            "federal income tax"
+        ]
+    }
+},
+{
+    "category": "federal payroll taxes",
+    "subcategory": "",
+    "accounttype": "Any",
+    "matchon": {
+        "memolikeany": [
+            "federal payroll tax"
+        ]
+    }
+},
+{
+    "category": "clothing",
+    "subcategory": "adult",
+    "accounttype": "Personal",
+    "matchon": {
+        "descriptionlikeany": [
+            "STITCH FIX",
+            "BRANDY MELVILLE",
+            "DILLARDS",
+            "EXPRESS#",
+            "GAR*GARNET",
+            "STITCHFIX",
+            "STITCH FIX",
+            "URBANOUTFITTES",
+            "ZAPPOS.COM",
+            "GOODWILL",
+            "TCS*COMPANY STORE",
+            "JCPENNEY"
+        ],
+        "memolikeany": [
+            "clothing-adult"
+        ]
+    }
+},
+{
+    "category": "clothing",
+    "subcategory": "child",
+    "accounttype": "",
+    "matchon": {
+        "descriptionlikeany": [
+            "DECKERS*UGG",
+            "ANTHROPOLOGIE"
+        ],
+        "memolikeany": [
+            "clothing-child"
+        ]
+    }
+
+},
+{
+    "category": "clothing",
+    "subcategory": "maintenance",
+    "accounttype": "",
+    "matchon": {
+        "descriptionlikeany": [
+            "CLEANERS"
+        ]
+    }
+
+},
+{
+    "category": "debt",
+    "subcategory": "",
+    "accounttype": "Personal",
+    "matchon": {
+        "descriptionlikeany": [
+            "LOAN PAYMENT"
+        ]
+    }
+
+},
+{
+    "category": "donation",
+    "subcategory": "",
+    "accounttype": "Any",
+    "matchon": {
+        "descriptionlikeany": [
+             "Wikiped"
+        ],
+        "memolikeany": [
+             "Arbor Day Foundation",
+             "WIKITRIBUNE",
+             "donation"
+        ]
+    }
+
+},
+{
+    "category": "entertainment",
+    "subcategory": "",
+    "accounttype": "Any",
+    "matchon": {
+        "descriptionlikeany": [
+            "ABEBOOKS",
+            "APPLE COM BILL",
+            "Audible",
+            "NETFLIX.COM"
+        ]
+    }
+
+},
+{
+    "category": "entertainment",
+    "subcategory": "travel",
+    "accounttype": "Personal",
+    "matchon": {
+        "descriptionlikeany": [
+            "DELTA AIR",
+            "AIRBNB",
+            "ALAMO RENT-A-CAR",
+            "AMERICAN AIR",
+            "AMERICAN EAGLE",
+            "AMERICASNATLPARKS",
+            "PARKING",
+            "UNITED",
+            "TRAVELOCITY",
+            "TOLL",
+            "HOTEL",
+            " INN ",
+            "TRANSIT",
+            "RESERVATIO",
+            "TOURISM ONLINE RES"
+        ],
+        "memolikeany": [
+            "travel"
+        ]
+    }
+
+},
+{
+    "category": "entertainment",
+    "subcategory": "",
+    "accounttype": "Personal",
+    "matchon": {
+        "descriptionlikeany": [
+            "BOOKS"
+        ]
+    }
+
+},
+{
+    "category": "fee",
+    "subcategory": "",
+    "accounttype": "Any",
+    "matchon": {
+        "descriptionlikeany": [
+            "ATM WITHDRAW FEE",
+            "ATM WITHDRAWAL FEE",
+            "ATM WITHDRAWL FEE",
+            "EXTENDED OD CHG",
+            "MAIL FEE",
+            "NSF CHARGE",
+            "OVERDRAFT FEE",
+            "POS FEE",
+            "RETURNED ITEM FEE",
+            "OD CHARGE",
+            "SERVICE FEE"
+        ]
+    }
+
+},
+{
+    "category": "food",
+    "subcategory": "grocery",
+    "accounttype": "Any",
+    "matchon": {
+        "descriptionlikeany": [
+            "QC GROCERY",
+            "MEIJER",
+            "ALDI",
+            "CMSVEND",
+            "FOOD MART",
+            "HOMELAND",
+            "SPROUTS",
+            "WAL-MART",
+            "Wal-Mart",
+            "WALMART",
+            "WHOLE F",
+            "INSTACART",
+            "WHOLEFDS",
+            "BUY FOR LESS",
+            "SUPERCENTER"
+        ]
+    }
+
+},
+{
+    "category": "food",
+    "subcategory": "restaurant",
+    "accounttype": "Any",
+    "matchon": {
+        "descriptionlikeany": [
+            "COFFE",
+            " PIE ",
+            "DRIVE-IN",
+            "CHICK-FIL-A",
+            "FUZZYS",
+            "SUBWAY",
+            "OUTBACK",
+            "TEXADELPHIA",
+            "WENDY",
+            "HARDEES",
+            "IHOP",
+            "BRAUMS",
+            "BAGEL",
+            "CAFE",
+            "CAFFE",
+            "CHICK FIL A",
+            "CRACKER BARREL",
+            "DUNKIN",
+            "KITCHEN",
+            "LIQUOR",
+            "SUSHI",
+            "WENDY_S",
+            "WOLFGANG PUCK",
+            "PANERA BREAD",
+            "SONIC CORPORATE CA",
+            "SONICDRIVEINSTORE.",
+            "SONIC DRIVE IN",
+            "DONUTS",
+            "STARBUCKS",
+            "DOORDASH",
+            "POSTMATES"
+        ],
+        "memolikeany": [
+            "restaurant"
+        ]
+    }
+
+},
+{
+    "category": "household",
+    "subcategory": "",
+    "accounttype": "Personal",
+    "matchon": {
+        "descriptionlikeany": [
+            "BEDBATH&BEYOND",
+            "BESTBUY",
+            "TARGET",
+            "FAMILY DOLLAR",
+            "POTTERYBARN.COM",
+            "PIER 1",
+            "DOLLAR TREE",
+            "ETSY.COM"
+        ],
+        "memolikeany": [
+            "household"
+        ]
+    }
+
+},
+{
+    "category": "housing",
+    "subcategory": "",
+    "accounttype": "Personal",
+    "matchon": {
+        "memolikeany": [
+            "mortgage"
+        ]
+    }
+},
+{
+    "category": "housing",
+    "subcategory": "insurance",
+    "accounttype": "Personal",
+    "matchon": {
+        "memolikeany": [
+            "home insurance"
+        ]
+    }
+},
+{
+    "category": "housing",
+    "subcategory": "maintenance",
+    "accounttype": "Personal",
+    "matchon": {
+        "descriptionlikeany": [
+            "LOWES",
+            "LOWE",
+            "HOME DEPOT",
+            "HARBOR FREIGHT",
+            "SHERWIN WILLIAMS"
+        ]
+    }
+
+},
+{
+    "category": "medical",
+    "subcategory": "doctor",
+    "accounttype": "",
+    "matchon": {
+        "descriptionlikeany":[
+            " CLINIC"
+        ],
+        "memolikeany": [
+            "Physicians",
+            "medical"
+        ]
+    }
+
+},
+{
+    "category": "medical",
+    "subcategory": "prescriptions",
+    "accounttype": "Personal",
+    "matchon": {
+        "descriptionlikeany": [
+            "PHARMACY",
+            "WALGREEN"
+        ]
+    }
+
+},
+{
+    "category": "vehicle",
+    "subcategory": "misc",
+    "accounttype": "Personal",
+    "matchon": {
+        "descriptionlikeany": [
+            "STREETCAR",
+            "TOKEN TRANSIT"
+        ],
+        "memolikeany": [
+            "car insurance"
+        ]
+    }
+
+},
+{
+    "category": "misc",
+    "subcategory": "atm",
+    "accounttype": "Any",
+    "matchon": {
+        "descriptionlikeany": [
+            "ATM CASH",
+            "St ATM",
+            "ATM DEPOSIT"
+        ]
+    }
+
+},
+{
+    "category": "school",
+    "subcategory": "",
+    "accounttype": "Personal",
+    "matchon": {
+        "descriptionlikeany": [
+            "COLLEGE",
+            "Collegeboard",
+            "SALLIE MAE",
+            "SALLIEMAEBANK"
+        ]
+    }
+
+},{
+    "category": "misc",
+    "subcategory": "gift",
+    "accounttype": "Personal",
+    "matchon": {
+        "memolikeany": [
+            "gift"
+        ]
+    }
+
+},
+    {
+        "category": "misc",
+        "subcategory": "",
+        "accounttype": "Personal",
+        "matchon": {
+            "descriptionlikeany": [
+                "AMZN",
+                "Amazon",
+                "APPLE.COM",
+                "Prime Video",
+                "POWELL",
+                "NETFLIX",
+                "LASTPASS.COM",
+                "BEST BUY",
+                "MICHAELS STORES",
+                "ULTA",
+                "HELLOFAX",
+                "Scribd",
+                "USPS",
+                "UPS STORE"
+            ],
+            "memolikeany": [
+                "misc"
+            ]
+        }
+    },
+{
+    "category": "postage",
+    "subcategory": "",
+    "accounttype": "",
+    "matchon": {
+        "descriptionlikeany": [
+            "USPS"
+        ]
+    }
+},
+{
+    "category": "utilities",
+    "subcategory": "water",
+    "accounttype": "Personal",
+    "matchon": {
+        "memolikeany": [
+            "utilities-water"
+        ]
+    }
+},
+{
+    "category": "utilities",
+    "subcategory": "phone - internet",
+    "accounttype": "Personal",
+    "matchon": {
+        "descriptionlikeany": [
+            "AT&T",
+            "ATT"
+        ]
+    }
+
+},
+{
+    "category": "vehicle",
+    "subcategory": "",
+    "accounttype": "Any",
+    "matchon": {
+        "memolikeany": [
+            "vehicle"
+        ]
+    }
+
+},
+{
+    "category": "vehicle",
+    "subcategory": "fuel",
+    "accounttype": "Any",
+    "matchon": {
+        "descriptionlikeany": [
+            "EXXONMOBIL",
+            "LOVES",
+            "BP#",
+            "E2GO",
+            "EXON",
+            "SHELL",
+            "GO MART",
+            "ELEVEN",
+            "MINI MART",
+            "SUNOCO",
+            "KUM & GO",
+            "LOVE S TRAVEL",
+            "LOVES CNTRY",
+            "PHILLIPS 66",
+            "PILOT",
+            "SPEEDWAY",
+            "ON THE RUN",
+            "FLYING J",
+            "CONOCO"
+        ]
+    }
+},
+{
+    "category": "vehicle",
+    "subcategory": "maintenance",
+    "accounttype": "Any",
+    "matchon": {
+        "descriptionlikeany": [
+            "FIRESTONE",
+            "VALVOLINE",
+            "VIOC"
+        ],
+        "memolikeany": [
+            "vehicle"
+        ]
+    }
+
+},
+{
+    "category": "transfer",
+    "subcategory": "",
+    "accounttype": "Any",
+    "matchon": {
+        "descriptionlikeany": [
+            "INTERNET XFER"
+        ],
+        "memolikeany": [
+            "transfer"
+        ]
+    }
+
+},{
+    "category": "transfer",
+    "subcategory": "",
+    "accounttype": "Personal",
+    "matchon": {
+        "descriptionlikeany": [
+            "DEPOSIT BRANCH"
+        ]
+    }
+
+},
+{
+    "category": "misc",
+    "subcategory": "pets",
+    "accounttype": "Personal",
+    "matchon": {
+        "descriptionlikeany": [
+            "PETSMART",
+            "BARKBOX",
+            "CHEWY.COM"
+        ]
+    }
+},
+{
+    "category": "retirement",
+    "subcategory": "",
+    "accounttype": "Personal",
+    "matchon": {
+        "descriptionlikeany": [
+            "INVESTMENT"
+        ]
+    }
+}
+]

@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Watkins Accounting</title>
+    <script type="text/javascript" src="nav.js"></script>
+    <script type="text/javascript" src="updatememo.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="writenav();">
+    <div id="nav"></div>
+    <div id="contentdescription" class="title"></div>
+    <form name="memoform" id="memoform" action="javascript:setmemo()">
+        <input type="submit" id="submit_button_top" name="submit" value="Update Memo Fields">
+        <div id="memo"></div>
+        <input type="submit" id="submit_button_bottom" name="submit" value="Update Memo Fields">
+    </form>
+<script language="JavaScript1.5">
+var table_location = document.getElementById("memo");
+
+var urlParams = new URLSearchParams(window.location.search);
+var hasParameters = (urlParams.toString().length > 0)
+var datasource = "/transactions/Any/currentyear/nocategory"
+
+if (hasParameters) {
+  var source = urlParams.get('source')
+  var category = urlParams.get('category')
+  console.log("Source: " + source + ", Category:" + category)
+
+  datasource = "/transactions/" + source + "/currentyear/" + category + "/"
+}
+
+updatetitle(datasource)
+
+const userAction = async () => {
+  const response = await fetch(datasource);
+  const transactiondata = await response.json();
+  if (transactiondata.length > 0) {
+    table_location.appendChild(buildHtmlTable(transactiondata));
+  } else {
+    table_location.appendChild(document.createTextNode("All Caught Up!"));
+    table_location.classList.add('title');
+  }
+}
+userAction();
+
+    </script>
+
+</body>
+</html>

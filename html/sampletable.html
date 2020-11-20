@@ -1,0 +1,139 @@
+<html>
+<head>
+
+</head>
+<body>
+<script language="JavaScript1.5">
+var hidden_columns = ["transaction_type", "balance", "automatedcategory", "automatedsubcategory", "category", "subcategory"];
+var _table_ = document.createElement('table'),
+  _tr_ = document.createElement('tr'),
+  _th_ = document.createElement('th'),
+  _td_ = document.createElement('td');
+
+// Builds the HTML Table out of myList json data from Ivy restful service.
+function buildHtmlTable(arr) {
+  var table = _table_.cloneNode(false),
+    columns = addAllColumnHeaders(arr, table);
+  for (var i = 0, maxi = arr.length; i < maxi; ++i) {
+    var tr = _tr_.cloneNode(false);
+    for (var j = 0, maxj = columns.length; j < maxj; ++j) {
+      var td = _td_.cloneNode(false);
+      cellValue = arr[i][columns[j]];
+      if (columns[j] == "memo") {
+        var input = document.createElement("input");
+        input.type = "text";
+        input.name = "memofortransaction" + arr[i]["id"];
+        td.appendChild(input);
+      } else {
+        td.appendChild(document.createTextNode(arr[i][columns[j]] || ''));
+      }
+      tr.appendChild(td);
+    }
+    table.appendChild(tr);
+  }
+  return table;
+}
+
+// Adds a header row to the table and returns the set of columns.
+// Need to do union of keys from all records as some records may not contain
+// all records
+function addAllColumnHeaders(arr, table) {
+  var columnSet = [],
+    tr = _tr_.cloneNode(false);
+  for (var i = 0, l = arr.length; i < l; i++) {
+    for (var key in arr[i]) {
+      if (arr[i].hasOwnProperty(key) && columnSet.indexOf(key) === -1 && (hidden_columns.indexOf(key) === -1)) {
+        columnSet.push(key);
+        var th = _th_.cloneNode(false);
+        th.appendChild(document.createTextNode(key));
+        tr.appendChild(th);
+      }
+    }
+  }
+  table.appendChild(tr);
+  return columnSet;
+}
+
+function setmemo(){
+    console.log("Starting to process memo data");
+    var memoform = document.getElementById("memoform")
+    var memoupdates = memoform.elements;
+    var memoupdatelist = [];
+    for (i=0; i<memoupdates.length; i++){
+        var memoupdate = memoupdates[i];
+        if (memoupdate.name != "submit"){
+            var memojson = new Object();
+            var id = (memoupdates[i].name).substring(18);
+            var value = memoupdates[i].value;
+            memojson.id = id;
+            memojson.memo = value;
+            memoupdatelist.push(memojson);
+        }
+    }
+    console.log(JSON.stringify(memoupdatelist));
+    memoform.reset();
+    console.log("Finished processing memo data");
+}
+</script>
+    <form name="memoform" id="memoform" action="javascript:setmemo()">
+        <div id="memo"></div>
+    <input type="submit" name="submit" value="Submit">
+    </form>
+<script language="JavaScript1.5">
+var table_location = document.getElementById("memo");
+console.log(table_location.innerText);
+table_location.appendChild(buildHtmlTable([
+{
+    "id": 329239392,
+    "check_number": 50,
+    "date": "swimming",
+    "description": "swimming",
+    "transaction_type": "swimming",
+    "debit_amount ": 50,
+    "credit_amount": 50,
+    "balance": 50,
+    "memo": "swimming",
+    "source": "swimming",
+    "category": "swimming",
+    "subcategory": "swimming",
+    "automatedcategory": "swimming",
+    "automatedsubcategory": "swimming"
+},
+{
+    "id": 902928282,
+    "check_number": 50,
+    "date": "swimming",
+    "description": "swimming",
+    "transaction_type": "swimming",
+    "debit_amount ": 0,
+    "credit_amount": 0,
+    "balance": 50,
+    "memo": "",
+    "source": "swimming",
+    "category": "",
+    "subcategory": "",
+    "automatedcategory": "",
+    "automatedsubcategory": ""
+},
+{
+    "id": 49202090,
+    "check_number": 150,
+    "date": "swimming",
+    "description": "swimming",
+    "transaction_type": "swimming",
+    "debit_amount ":150,
+    "credit_amount": 50,
+    "balance": 150,
+    "memo": "swimming",
+    "source": "",
+    "category": "swimming",
+    "subcategory": "",
+    "automatedcategory": "swimming",
+    "automatedsubcategory": "swimming"
+}
+]));
+
+    </script>
+
+</body>
+</html>
