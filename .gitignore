@@ -1,0 +1,7 @@
+accounting
+.idea
+.ipynb_checkpoints
+importfiles/*.csv
+importfiles/processed/*
+__pycache__
+.DS*
