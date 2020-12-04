@@ -11,12 +11,12 @@ This system is a custom accounting system with a few basic goals:
  - Allow for custom memo entries for transactions to aid in automatically categorizing transactions.
 
 ## Prerequisites
- - Python 3.x should be installed (you can check by typing 'python3 --version' in a terminal session)
- - SQLAlchemy Library for python (type 'pip3 install SQLAlchemy' in terminal)
- - CherryPy Library for python (type 'pip3 install CherryPy' in terminal)
+ - Python 3.x should be installed (you can check by typing ```python3 --version``` in a terminal session)
+ - SQLAlchemy Library for python (type ```pip3 install SQLAlchemy``` in terminal)
+ - CherryPy Library for python (type ```pip3 install CherryPy``` in terminal)
+ - You'll need to create a database once (type ```sqlite3 accounting < db_scripts/new_accounting_db.sql``` in a terminal session at the root of this project)
  
 ## Starting up 
-If it doesn't exist, you'll need to create a sqlite file called 'accounting' and create a table from the 'transactions.sql.txt' file
 Type the following in a terminal window.
 
 ``
@@ -31,8 +31,15 @@ The site has basic functionality
  - View category summary by Account
  - View category details by Account
  
+## Using Demo Data
+Copy the demo data to the 'importfiles' folder by typing 
+```
+cp importfiles/processed/personal_account_sample.csv importfiles
+```
+
 ## Importing new data
 This is a work in progress
+- the data files must have the following columns 'Check Number,Date,Description,Transaction Type,Debit Amount,Credit Amount,Balance'
 - export the data files in csv format for each account
 - put the files in the 'importfiles' directory
 - run from the terminal 'python3 process.py'
