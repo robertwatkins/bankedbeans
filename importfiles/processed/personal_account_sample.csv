@@ -1,4 +1,4 @@
 Check Number,Date,Description,Transaction Type,Debit Amount,Credit Amount,Balance
 ,06/10/2020,Gas Station,POS,20.00,,1000.00	
-,06/10/2020	,Paycheck	,Credit	,,1000.00,2000.00
-4090,06/10/2020	,Water Bill	,Check	,50.00	,,1950.00
+,06/10/2020,Paycheck	,DEP	,,1000.00,2000.00
+4090,06/10/2020,Water Bill	,CHECK,50.00	,,1950.00

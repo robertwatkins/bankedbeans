@@ -236,10 +236,10 @@ def import_transactions():
         conn.close()
         set_source_sql = ""
         import_file_name = file.title().capitalize().upper()
-        if import_file_name.startswith("ROBERT AND MARIA"):
+        if import_file_name.startswith("PERSONAL"):
             set_source_sql = "update transactions set source='Personal' where source is NULL;"
         else:
-            source = file[:file.find("(")]
+            source = file[:file.find(".csv")]
             set_source_sql = "update transactions set source='" + source + "' where source is NULL;"
         print(set_source_sql)
         query(set_source_sql)
