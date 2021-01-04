@@ -14,7 +14,9 @@ This system is a custom accounting system with a few basic goals:
  - Python 3.x should be installed (you can check by typing ```python3 --version``` in a terminal session)
  - SQLAlchemy Library for python (type ```pip3 install SQLAlchemy``` in terminal)
  - CherryPy Library for python (type ```pip3 install CherryPy``` in terminal)
+ - Also install pandas by typing ```pip3 install pandas``` in terminal
  - You'll need to create a database once (type ```sqlite3 accounting < db_scripts/new_accounting_db.sql``` in a terminal session at the root of this project)
+ 
  
 ## Starting up 
 Type the following in a terminal window.
